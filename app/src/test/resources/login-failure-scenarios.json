@@ -1,0 +1,51 @@
+[
+  {
+    "username": "not_pinecone",
+    "password": "654321",
+    "expectedStatus": 401,
+    "expectedErrorType": "AuthorizationError",
+    "expectedErrorMessage": "Invalid credentials"
+  },
+  {
+    "username": "pinecone",
+    "password": "654321",
+    "expectedStatus": 401,
+    "expectedErrorType": "AuthorizationError",
+    "expectedErrorMessage": "Invalid credentials"
+  },
+  {
+    "username": "",
+    "password": "654321",
+    "expectedStatus": 400,
+    "expectedErrorType": "InvalidRequestError",
+    "expectedErrorMessage": "Username is required"
+  },
+  {
+    "username": null,
+    "password": "654321",
+    "expectedStatus": 400,
+    "expectedErrorType": "InvalidRequestError",
+    "expectedErrorMessage": "Username is required"
+  },
+  {
+    "username": "pinecone",
+    "password": "",
+    "expectedStatus": 400,
+    "expectedErrorType": "InvalidRequestError",
+    "expectedErrorMessage": "Password is required"
+  },
+  {
+    "username": "pinecone",
+    "password": null,
+    "expectedStatus": 400,
+    "expectedErrorType": "InvalidRequestError",
+    "expectedErrorMessage": "Password is required"
+  },
+  {
+    "username": "blockeduser",
+    "password": "123456",
+    "expectedStatus": 403,
+    "expectedErrorType": "AuthorizationError",
+    "expectedErrorMessage": "User blocked"
+  }
+]
