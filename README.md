@@ -17,6 +17,7 @@ Just a personal playground for building, testing and designing REST APIs.
 
 ## Project Structure
 
+```
 ApiTests/
 ├── app/
 │   ├── mockoon/
@@ -36,6 +37,7 @@ ApiTests/
 ├── gradlew.bat
 ├── README.md
 └── settings.gradle
+```
 
 ## Notes
 
