@@ -22,11 +22,11 @@ ApiTests/
 ├── app/
 │   ├── mockoon/
 │   │ └── notes_api_mock.json
-│   └── src/test/
-│       ├── java/
-│       └── resources/
-│           ├── login-failure-scenarios.json
-│           └── testng.xml
+│   ├── src/test/
+│   │   ├── java/
+│   │   └── resources/
+│   │       ├── login-failure-scenarios.json
+│   │       └── testng.xml
 │   └── build.gradle
 ├── gradle/
 │   └── wrapper/
